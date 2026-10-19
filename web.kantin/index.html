@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Mimim Cihuy - Kantin Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Kantin Mimin Cihuy</h2>
+        <nav>
+            <a href="#beranda">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#keranjang">Keranjang (<span id="jumlah">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang Di Kantin Mimin Cihuy!</h1>
+        <p>Makanan enak, Murah, Berkualitas.</p>
+        <a href="#menu" class="tombol">Lihat Menu</a>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu</h2>
+
+        <div class="daftar-menu" id="daftar-menu"></div>
+    </section>
+
+    <section class="keranjang" id="keranjang">
+        <h2>Keranjang
+        </h2>
+        <div id="isi-keranjang">
+            <p>Keranjang masih kosong.</p>
+        </div>
+
+        <h3>Total: <span id="total">Rp0</span></h3>
+        <button class="tombol" onclick="checkout()">Pesan Sekarang</button>
+    </section>
+
+    <footer>
+        <p>&copy; mimincihuy2026 | Kantin Sederhana
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
